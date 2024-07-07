@@ -25,34 +25,6 @@ This library provides functionality to extract specific parts of records discuss
    pip install -r requirements.txt
    ```
 
-## Usage
-
-### Extracting Claims
-1. Place the input CSV file in the repository directory.
-2. Run the main script to extract claims from the records and output the results to a CSV file:
-   ```bash
-   python claim_extraction_library.py
-   ```
-
-### Testing
-1. Define the expected results for the sample records in the `test_claim_extraction.py` script.
-2. Run the test script to verify the claim extraction process with sample records:
-   ```bash
-   python test_claim_extraction.py
-   ```
-
-## Output
-The system outputs a structured format indicating where the claims are discussed within the records. The output is saved to a CSV file named `extracted_claims.csv` in the repository directory with the following structure:
-```json
-[
-  {
-    "record_id": "a879cf1-120c-5a69-b059-5820f08abae3",
-    "claim_indices": [2, 5, 7]
-  },
-  ...
-]
-```
-
 ## Documentation
 - `preprocess.py`: Script for data preprocessing.
 - `text_splitter.py`: Script for splitting text into sentences and annotating them.
